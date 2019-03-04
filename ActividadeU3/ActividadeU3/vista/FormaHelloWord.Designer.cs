@@ -1,6 +1,6 @@
 ﻿namespace ActividadeU3
 {
-    partial class Form1
+    partial class FormaHelloWord
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormaHelloWord
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(654, 501);
+            this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.Name = "FormaHelloWord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mi primer Hello Word";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
