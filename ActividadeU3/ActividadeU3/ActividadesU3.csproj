@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="modelo\campeonato\Arbitro.cs" />
+    <Compile Include="modelo\campeonato\Cancha.cs" />
+    <Compile Include="modelo\campeonato\Equipo.cs" />
+    <Compile Include="modelo\campeonato\Jugador.cs" />
+    <Compile Include="modelo\campeonato\Persona.cs" />
     <Compile Include="modelo\Carrera.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="modelo\Facilitador.cs" />
