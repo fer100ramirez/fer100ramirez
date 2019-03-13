@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ActividadeU3.vista;
 
 namespace ActividadeU3
 {
@@ -16,7 +17,7 @@ namespace ActividadeU3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormaHelloWord());
+            Application.Run(new Main());
         }
     }
 }

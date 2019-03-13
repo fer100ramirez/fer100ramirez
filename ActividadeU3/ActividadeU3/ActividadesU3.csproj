@@ -54,6 +54,12 @@
     <Compile Include="modelo\Carrera.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="modelo\Facilitador.cs" />
+    <Compile Include="vista\FormaCampeonato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaCampeonato.Designer.cs">
+      <DependentUpon>FormaCampeonato.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\FormaEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vista\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vista\FormaCampeonato.resx">
+      <DependentUpon>FormaCampeonato.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vista\FormaEstudiante.resx">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vista\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
