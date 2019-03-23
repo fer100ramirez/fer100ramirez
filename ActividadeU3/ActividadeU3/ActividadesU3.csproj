@@ -53,9 +53,12 @@
     <Compile Include="modelo\campeonato\Persona.cs" />
     <Compile Include="modelo\Carrera.cs" />
     <Compile Include="modelo\cinema\Asiento.cs" />
+    <Compile Include="modelo\cinema\Boleto.cs" />
+    <Compile Include="modelo\cinema\Cartelera.cs" />
     <Compile Include="modelo\cinema\Cliente.cs" />
     <Compile Include="modelo\cinema\Pelicula.cs" />
     <Compile Include="modelo\cinema\Persona.cs" />
+    <Compile Include="modelo\cinema\Reservacion.cs" />
     <Compile Include="modelo\cinema\Sala.cs" />
     <Compile Include="modelo\cinema\Taquillero.cs" />
     <Compile Include="modelo\Estudiante.cs" />
