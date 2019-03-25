@@ -28,5 +28,12 @@ namespace ActividadeU3.vista
             forma.Show();
             this.Hide(); //Esconder la forma.
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormaJornada n = new FormaJornada();
+            n.Show();
+            this.Hide();
+        }
     }
 }

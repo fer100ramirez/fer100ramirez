@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="modelo\campeonato\Arbitro.cs" />
+    <Compile Include="modelo\campeonato\Campeonato.cs" />
     <Compile Include="modelo\campeonato\Cancha.cs" />
     <Compile Include="modelo\campeonato\Equipo.cs" />
+    <Compile Include="modelo\campeonato\Jornada.cs" />
     <Compile Include="modelo\campeonato\Jugador.cs" />
     <Compile Include="modelo\campeonato\Persona.cs" />
     <Compile Include="modelo\Carrera.cs" />
@@ -75,6 +77,12 @@
     <Compile Include="vista\FormaEstudiante.Designer.cs">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\FormaJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaJornada.Designer.cs">
+      <DependentUpon>FormaJornada.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\Hello Word.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vista\FormaEstudiante.resx">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormaJornada.resx">
+      <DependentUpon>FormaJornada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\Hello Word.resx">
       <DependentUpon>Hello Word.cs</DependentUpon>

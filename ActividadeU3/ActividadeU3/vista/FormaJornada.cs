@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace ActividadeU3.vista
 {
-    public partial class FormaCampeonato : Form
+    public partial class FormaJornada : Form
     {
-        public FormaCampeonato()
+        public FormaJornada()
         {
             InitializeComponent();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Main s = new Main();
-            s.Show();
+            Main n = new Main();
+            n.Show();
             this.Hide();
         }
 
@@ -29,11 +29,5 @@ namespace ActividadeU3.vista
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FormaJornada n = new FormaJornada();
-            n.Show();
-            this.Hide();
-        }
     }
 }

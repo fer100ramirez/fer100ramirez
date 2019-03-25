@@ -32,11 +32,11 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -65,7 +65,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
             this.splitContainer1.Size = new System.Drawing.Size(673, 469);
-            this.splitContainer1.SplitterDistance = 89;
+            this.splitContainer1.SplitterDistance = 84;
             this.splitContainer1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -88,6 +88,16 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(33, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 42);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Liga de Futbol Miguel Hidalgo";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -105,7 +115,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 254F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(673, 376);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(673, 381);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button1
@@ -116,7 +126,7 @@
             this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(540, 31);
+            this.button1.Size = new System.Drawing.Size(540, 36);
             this.button1.TabIndex = 0;
             this.button1.Text = "Campeonatos";
             this.button1.UseVisualStyleBackColor = false;
@@ -128,7 +138,7 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(3, 80);
+            this.button3.Location = new System.Drawing.Point(3, 85);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(540, 39);
             this.button3.TabIndex = 2;
@@ -141,29 +151,20 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(3, 40);
+            this.button2.Location = new System.Drawing.Point(3, 45);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(540, 34);
             this.button2.TabIndex = 1;
             this.button2.Text = "Jornadas";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(33, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(520, 42);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Liga de Futbol Miguel Hidalgo";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.pictureExit);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(549, 125);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(549, 130);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(121, 248);
             this.flowLayoutPanel2.TabIndex = 3;
@@ -183,6 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(673, 469);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
