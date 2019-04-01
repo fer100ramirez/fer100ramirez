@@ -9,6 +9,9 @@ namespace ActividadeU3
 {
     static class Program
     {
+        public static FormaCampeonato formaCampeonato = null;
+        public static FormaJornada formaJornada = null;
+        public static Main main = null;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,6 +20,9 @@ namespace ActividadeU3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            main = new Main();
+            formaCampeonato = new FormaCampeonato();
+            formaJornada = new FormaJornada();
             Application.Run(new Main());
         }
     }

@@ -12,6 +12,7 @@ namespace ActividadeU3.vista
 {
     public partial class FormaCampeonato : Form
     {
+        private string path = "c:\\temp\\campeonato.txt";
         public FormaCampeonato()
         {
             InitializeComponent();
@@ -35,5 +36,12 @@ namespace ActividadeU3.vista
             n.Show();
             this.Hide();
         }
+        private void LoadGrid()
+        {
+            datos.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
+            datos.Rows.Clear(); //si hay datos los elimina
+            datos.AllowUserToAddRows = false; //permite agregar registros
+        }
+
     }
 }
