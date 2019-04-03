@@ -39,7 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.datos = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,8 +49,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateInicio = new System.Windows.Forms.DateTimePicker();
+            this.dateFin = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -99,7 +99,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.16298F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.83702F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
@@ -107,7 +107,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textNombre, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.datos, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
@@ -139,7 +139,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button3.Location = new System.Drawing.Point(550, 59);
+            this.button3.Location = new System.Drawing.Point(549, 59);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 46);
             this.button3.TabIndex = 5;
@@ -163,7 +163,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(550, 111);
+            this.pictureBox2.Location = new System.Drawing.Point(549, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +187,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(550, 141);
+            this.pictureBox3.Location = new System.Drawing.Point(549, 141);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -207,12 +207,12 @@
             this.label5.Text = "Jornada";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(356, 20);
-            this.textBox1.TabIndex = 4;
+            this.textNombre.Location = new System.Drawing.Point(151, 23);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(356, 20);
+            this.textNombre.TabIndex = 4;
             // 
             // textBox2
             // 
@@ -232,7 +232,7 @@
             this.datos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datos.Location = new System.Drawing.Point(151, 141);
             this.datos.Name = "datos";
-            this.datos.Size = new System.Drawing.Size(393, 220);
+            this.datos.Size = new System.Drawing.Size(392, 220);
             this.datos.TabIndex = 8;
             // 
             // Id
@@ -262,15 +262,15 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label7, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dateInicio, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dateFin, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(151, 59);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(393, 46);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(392, 46);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // label7
@@ -280,7 +280,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(199, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 23);
+            this.label7.Size = new System.Drawing.Size(190, 23);
             this.label7.TabIndex = 1;
             this.label7.Text = "Fecha Fin";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -297,31 +297,32 @@
             this.label6.Text = "Fecha Inicio";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // dateInicio
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 26);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(171, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dateInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateInicio.Location = new System.Drawing.Point(3, 26);
+            this.dateInicio.Name = "dateInicio";
+            this.dateInicio.Size = new System.Drawing.Size(171, 20);
+            this.dateInicio.TabIndex = 6;
             // 
-            // dateTimePicker2
+            // dateFin
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(199, 26);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker2.TabIndex = 7;
+            this.dateFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateFin.Location = new System.Drawing.Point(199, 26);
+            this.dateFin.Name = "dateFin";
+            this.dateFin.Size = new System.Drawing.Size(190, 20);
+            this.dateFin.TabIndex = 7;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(550, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(549, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormaCampeonato
             // 
@@ -362,14 +363,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textNombre;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateInicio;
         private System.Windows.Forms.DataGridView datos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateFin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
