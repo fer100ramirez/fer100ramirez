@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ActividadeU3.modelo.campeonato;
 
 namespace ActividadeU3.vista
 {
@@ -86,11 +87,11 @@ namespace ActividadeU3.vista
             }
             else
             {
-                FormaCampeonato campeonato = new FormaCampeonato();
+                Campeonato campeonato = new Campeonato();
                 campeonato.Id = new Random().Next(1, 1000);
-                campeonato.Name = textNombre.Text;
-                campeonato.fechaInicio = dateInicio.Value;
-                campeonato.fechaFin = dateInicio.Value;
+                campeonato.Nombre = textNombre.Text;
+                campeonato.FechaInicio = dateInicio.Value;
+                campeonato.FechaTermino = dateInicio.Value;
 
                 string[] array = campeonato.ToString().Split(new char[] { '|' });
                 datos.Rows.Add(array);
@@ -101,12 +102,38 @@ namespace ActividadeU3.vista
             }
         }
 
-        private void AddRecordFile(FormaCampeonato campeonato)
+        private void AddRecordFile(Campeonato campeonato)
         {
             StreamWriter escribir = new StreamWriter(path, true);
 
             escribir.WriteLine(campeonato.ToString());
             escribir.Close();
+        }
+
+        private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            string opcion = e.ClickedItem.ToString().ToLower();
+
+            if (datos.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = datos.SelectedRows[0];
+                string id = datos.SelectedCells[0].Value.ToString();
+                string nombre = datos.SelectedCells[1].Value.ToString();
+
+                switch (opcion)
+                {
+                    case "eliminar":
+                        string mensaje = "¿Deseas eliminar el " + nombre + "con Id= " + id;
+                        contextMenuStrip1.Hide();
+                        if(MessageBox.Show(mensaje, "Eliminando registro", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            datos.Rows.RemoveAt(row.Index);
+                        }
+                        break;
+                    case "modificar":
+                        break;
+                }
+            }
         }
     }
 }

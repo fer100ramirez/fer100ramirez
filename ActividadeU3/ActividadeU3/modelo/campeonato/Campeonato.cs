@@ -75,13 +75,15 @@ namespace ActividadeU3.modelo.campeonato
                     _fechaInicio = value;
             }
         }
+        public override string ToString()
+        {
+
+            return Id + "|" + Nombre + "|" + FechaInicio.ToString("dd/MM/yyyy") + "|" + FechaTermino.ToString("dd/MM/yyyy");
+        }
     }
     
 
 
-        /*public override string ToString()
-        {
-            return _id + "|" + _fechaInicio.ToString("dd/MM/yyyy") + "|" + _fechaTermino.ToString("dd/MM/yyyy");
-        }*/
+        
     }
 
